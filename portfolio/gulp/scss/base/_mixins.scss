@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap: $espaciado;
+    align-items: center;
+}
+
+@mixin mediaGrid($ancho, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax($ancho, 1fr));
+    gap: $espaciado;
+    align-items: center;
+}
+
+@mixin error {
+    color: v.$rojo;
+  }
+
+@mixin borderRadius {
+    border-radius: 0.5rem;
+  }
