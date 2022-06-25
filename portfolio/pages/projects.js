@@ -1,8 +1,13 @@
 import React from 'react'
+import Layout from '../layout/Layout'
 
 function projects() {
   return (
-    <div>projects</div>
+    <Layout>
+    <div>
+      projects
+    </div>
+    </Layout>
   )
 }
 

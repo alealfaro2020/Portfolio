@@ -306,3 +306,59 @@ template {
 [hidden] {
   display: none;
 }
+
+.navbarContenido {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+.navbarContenido .logos {
+  display: flex;
+}
+.navbarContenido .logos .linkedinIcon {
+  margin: 1rem 1rem;
+}
+.navbarContenido .logos .linkedinIcon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.navbarContenido .logos .githubIcon {
+  margin: 1rem 1rem;
+}
+.navbarContenido .logos .githubIcon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.navbarContenido .seleccionado {
+  margin: 1rem;
+}
+.navbarContenido .seleccionado:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contenedorHome {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.contenedorHome span {
+  color: #252526;
+}
+.contenedorHome p {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px #e1e1e1;
+  text-align: center;
+}

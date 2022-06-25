@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from "nextjs-routes/link"
 import { useRouter } from "next/router"
-import imagen1 from '../public/bx-envelope.svg'
-import imagen2 from '../public/bxl-github.svg'
-import imagen3 from '../public/bxl-linkedin.svg'
-
+import { FaLinkedin } from "react-icons/fa"
+import { BsGithub } from "react-icons/bs"
+ 
 const moviNavBar = [
-    {paso:1, nombre: 'Home',url: '/'},
+    {paso:1, nombre: 'Home',url: '/home'},
     {paso:2, nombre: 'About',url: '/about'},
     {paso:3, nombre: 'Skills',url: '/skills'},
     {paso:4, nombre: 'Projects',url: '/projects'},
@@ -20,7 +19,7 @@ function NavBar() {
 
   return (
     <>
-      <div>
+      <div className="navbarContenido">
         {moviNavBar.map((p) => (
           <p
             key={p.paso}
@@ -33,18 +32,20 @@ function NavBar() {
             {p.nombre}
           </p>
         ))}
-      </div>
-      <div>
-        <Link href="https://www.linkedin.com/in/alejandroalfaro2022/">
-          <img src={imagen3} alt="linkedIn" />
-        </Link>
-      </div>
+      <div className='logos'>
+        <div className='linkedinIcon'>
+          <Link href="https://www.linkedin.com/in/alejandroalfaro2022/">
+          <FaLinkedin />
+          </Link>
+        </div>
 
-      <div>
-        <Link href="https://github.com/alealfaro2020">
-          <img src={imagen2} alt="github" />
-        </Link>
+        <div className='githubIcon'>
+          <Link href="https://github.com/alealfaro2020">
+            <BsGithub />
+          </Link>
+        </div>
       </div>
+    </div>
     </>
   );
 }

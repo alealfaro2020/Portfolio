@@ -1,0 +1,31 @@
+.navbarContenido{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem auto;
+    .logos{
+        display: flex;
+        .linkedinIcon{
+            margin: 1rem 1rem;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                }
+        }
+        .githubIcon{
+            margin: 1rem 1rem;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                }
+        }
+    }
+    .seleccionado{
+        margin: 1rem;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        }
+    }
+}
+

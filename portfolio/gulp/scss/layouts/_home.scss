@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenedorHome{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    span {
+        color: v.$grisoscuro;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+    }
+}  

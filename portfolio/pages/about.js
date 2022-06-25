@@ -1,11 +1,12 @@
 import React from 'react'
+import Layout from '../layout/Layout'
 
-function aboutme() {
+function about() {
   return (
-    <div>
-        about me
-    </div>
+      <Layout>
+        <h3>hola soy un crack</h3>
+      </Layout> 
   )
 }
 
-export default aboutme
+export default about

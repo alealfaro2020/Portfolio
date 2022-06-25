@@ -1,10 +1,13 @@
 import React from 'react'
+import Layout from '../layout/Layout'
 
 function skills() {
   return (
+    <Layout>
     <div>
-        skills
+      skills
     </div>
+    </Layout>
   )
 }
 

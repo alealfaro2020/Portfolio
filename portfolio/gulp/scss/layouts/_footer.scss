@@ -1,0 +1,11 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 1px v.$grisclaro;
+    text-align: center;
+}
