@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { BsGithub } from "react-icons/bs"
  
 const moviNavBar = [
-    {paso:1, nombre: 'Home',url: '/home'},
+    {paso:1, nombre: 'Home',url: '/'},
     {paso:2, nombre: 'About',url: '/about'},
     {paso:3, nombre: 'Skills',url: '/skills'},
     {paso:4, nombre: 'Projects',url: '/projects'},
